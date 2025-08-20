@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMING PORTAL</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            background: #1a1a1a;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #6366f1;
+            padding: 20px;
+            font-size: 36px;
+            color: white;
+        }
+
+        iframe {
+            width: 80%;
+            height: 400px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        /* Seção Chamada */
+        .chamada {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 50%, rgba(59, 130, 246, 0.2) 100%);
+            border: 2px solid #6366f1;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .chamada-texto {
+            z-index: 2;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .chamada iframe {
+            border-radius: 15px;
+            border: 2px solid #6366f1;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 0 10px #6366f1, 0 0 20px #6366f1;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            color: #8b5cf6;
+            font-weight: 600;
+        }
+
+        /* Seção de Categoria de Vídeos */
+        .categoria {
+            padding: 20px 40px;
+            margin-top: 50px;
+        }
+
+        .categoria h2 {
+            color: #3b82f6;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .categoria-videos {
+            display: flex;
+            overflow-x: auto;
+            gap: 25px;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+        }
+
+        .categoria-videos a {
+            position: relative;
+            display: block;
+            min-width: 320px;
+            transition: all 0.3s ease;
+        }
+
+        .categoria-videos img {
+            width: 320px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid #6366f1;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s ease;
+            opacity: 0.8;
+        }
+
+        .categoria-videos a:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+
+        .categoria-videos a:hover img {
+            opacity: 1;
+            border-color: #8b5cf6;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 40px rgba(139, 92, 246, 0.5);
+        }
+
+        /* Efeitos Responsivos */
+        @media (max-width: 768px) {
+            header {
+                font-size: 28px;
+                padding: 20px;
+            }
+
+            .chamada {
+                flex-direction: column;
+                padding: 40px 15px;
+            }
+
+            .chamada iframe {
+                width: 100%;
+                height: 250px;
+            }
+
+            .categoria {
+                padding: 20px 15px;
+            }
+
+            .categoria-videos img {
+                width: 280px;
+                height: 157px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>GAMING PORTAL</header>
+
+    <!-- Seção Chamada (com um vídeo em destaque) -->
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>GAME ZONE ELITE</h1>
+            <p>#level-up</p>
+        </div>
+        <div>
+            <!-- Vídeo em Destaque -->
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Seção de Vídeos -->
+    <section class="categoria">
+        <h2>Gameplay & Reviews</h2>
+        <div class="categoria-videos">
+            <!-- Lista de vídeos -->
+            <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
+                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
+                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
+                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
+                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
+                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" />
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
